@@ -1,0 +1,56 @@
+body, html {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	font-size: 12px;
+	font-family: "Trade Gothic", Arial, Helvetica, sans-serif;
+	/*font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;*/
+	background-color:rgba(50,50,50,1);
+	color:#FFF;
+}
+#grid, #pager {
+ /* position: fixed;*/
+/* width: 300px;*/
+}
+#grid {
+  /*bottom: 0;*/
+  height: 600px;
+  overflow-x:hidden;
+}
+
+.slick-row:hover {
+	font-weight:bold;
+	color:#67d5fd;
+}
+#pwgraph{
+	width:1300;
+	height:350px;
+}
+#container{
+	margin:auto;
+	width:1200px;
+	height:650px;
+}
+#hilight{
+	width:400px;
+	padding:50px;
+	text-align:right;
+	float:right;
+}
+#saving{
+
+}
+#premium{
+
+}
+.blue{
+	color:#67d5fd;
+}
+.green{
+	color:#d4ed20;
+}
+.bigNumber{
+	font-size:90px;
+	font-weight:bold;
+}

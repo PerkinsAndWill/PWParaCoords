@@ -150,7 +150,6 @@ $('#upload').on('click',function(){
 	//reader.onerror = ...
 	//reader.onloadend = ...
 
-
 	function shipOff(event) {
 		var result = event.target.result;
 		var fileName = document.getElementById('filename').files[0].name; //Should be 'picture.jpg'
@@ -171,3 +170,7 @@ function continueSubmission(m){
 $('.close').on('click',function(e){
 	$(e.target).closest('#overlay').hide(200);
 });
+
+$('#showLoadDialog').on('click',function(){
+	$('#overlay').show(200);
+})

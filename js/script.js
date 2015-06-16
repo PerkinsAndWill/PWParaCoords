@@ -128,12 +128,46 @@ function parallelCoordinates(data) {
 
 };
 
-var file = './data/Results_40percentsS.csv';
 
-$.ajax({
-	url:file,
-	success:function(message){
-		var data = d3.csv.parse(message);
-		parallelCoordinates(data);
+function loadFile(filename){
+	$.ajax({
+		url:filename,
+		success:function(message){
+			var data = d3.csv.parse(message);
+			parallelCoordinates(data);
+		}
+	});
+}
+
+$('#upload').on('click',function(){
+	var file = document.getElementById('filename').files[0]; //Files[0] = 1st file
+	var reader = new FileReader();
+	reader.readAsDataURL(file);
+	reader.onload = shipOff;
+	//reader.onloadstart = ...
+	//reader.onprogress = ... <-- Allows you to update a progress bar.
+	//reader.onabort = ...
+	//reader.onerror = ...
+	//reader.onloadend = ...
+
+
+	function shipOff(event) {
+		var result = event.target.result;
+		var fileName = document.getElementById('filename').files[0].name; //Should be 'picture.jpg'
+		$.post('upload.php', { data: result, name: fileName }, continueSubmission);
 	}
+});
+
+function continueSubmission(m){
+	var path = './data/';
+
+	var response = JSON.parse(m);
+	if(response.hasOwnProperty('serverFile')){
+		loadFile(path+response.serverFile);
+	}
+	
+}
+
+$('.close').on('click',function(e){
+	$(e.target).closest('#overlay').hide(200);
 });

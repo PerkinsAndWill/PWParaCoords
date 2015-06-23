@@ -29,12 +29,17 @@ function parallelCoordinates(data) {
 
   // setting up grid
   var column_keys = [
-	'Domestic Hot Water',
-	'Lighting',
-	'Glazing',
-	'Wall',
-	'Roof'
+	"Name",
+	"VT%",
+	"U VALUE",
+	"SHGC",
+	"Cooling/Year",
+  "Peak Demand",
+  "Peak Cooling Tons",
+  "EUI",
+  "Annual Bill "
   ];
+  // console.log(column_keys)
   // var column_keys = d3.keys(data[0]);
   var columns = column_keys.map(function(key,i) {
 	return {
@@ -75,7 +80,7 @@ function parallelCoordinates(data) {
     var x = a[sortcol], y = b[sortcol];
     return (x == y ? 0 : (x > y ? 1 : -1));
   }
-  
+
   // click header to sort grid column
   grid.onSort.subscribe(function (e, args) {
     sortdir = args.sortAsc ? 1 : -1;
@@ -95,8 +100,8 @@ function parallelCoordinates(data) {
     var d = parcoords.brushed() || data;
 	// console.log(d);
 	var payback = Math.round(d[i]['Payback years'])+' years';
-	var saving = Math.round(d[i]['Additional saving %']) + '%';
-	var premium = '$'+numberWithCommas(Math.round(d[i]['Premium Cost']));
+	var saving = Math.round(d[i]['VT%']) + '%';
+	var premium = '$'+numberWithCommas(Math.round(d[i]['Annual Bill ']));
 	// console.log(saving);
 	// console.log(payback);
 	$("#saving").html(saving);

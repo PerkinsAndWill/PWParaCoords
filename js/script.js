@@ -22,7 +22,7 @@ function parallelCoordinates(data) {
 
   parcoords
     .data(data)
-	.color("#67d5fd")
+    .color("#67d5fd")
     .render()
     .reorderable()
     .brushMode("1D-axes");
@@ -30,14 +30,14 @@ function parallelCoordinates(data) {
   // setting up grid
   var column_keys = [
 	"Name",
-	"VT%",
+	"VT",
 	"U VALUE",
 	"SHGC",
-	"Cooling/Year",
-  "Peak Demand",
+	"Cooling/Year (x 1000000 kwh)",
+  "Peak Demand (x1000 kw)",
   "Peak Cooling Tons",
   "EUI",
-  "Annual Bill "
+  "Annual Bill (Electric +Gas)"
   ];
   // console.log(column_keys)
   // var column_keys = d3.keys(data[0]);
@@ -100,8 +100,8 @@ function parallelCoordinates(data) {
     var d = parcoords.brushed() || data;
 	// console.log(d);
 	var payback = Math.round(d[i]['Payback years'])+' years';
-	var saving = Math.round(d[i]['VT%']) + '%';
-	var premium = '$'+numberWithCommas(Math.round(d[i]['Annual Bill ']));
+	var saving = Math.round(d[i]['VT'].replace('%','')) + '%';
+	var premium = '$'+numberWithCommas(Math.round(d[i]['Annual Bill (Electric +Gas)']));
 	// console.log(saving);
 	// console.log(payback);
 	$("#saving").html(saving);
@@ -169,7 +169,7 @@ function continueSubmission(m){
 	if(response.hasOwnProperty('serverFile')){
 		loadFile(path+response.serverFile);
 	}
-	
+
 }
 
 $('.close').on('click',function(e){

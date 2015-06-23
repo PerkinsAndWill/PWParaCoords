@@ -1,0 +1,33 @@
+Domestic Hot Water,BEMS,PV,Equipment,Lighting,Roof,Wall,Glazing,Solar Boiler,Premium Cost,Additional saving %,LEED Points,EUI (Kwh/sqm),Payback years
+baseline,null,null,Baseline,Baseline,Baseline,baseline,Baseline,25% roof,66015.48237,5.367981772,0,414,0
+baseline,null,null,Baseline,L1 T-10 Florescent ,Baseline,baseline,Baseline,25% roof,96794.91237,20.58670937,8,328.7710232,0.870751882
+baseline,null,null,Baseline,L2 T-8 Florescent ,Baseline,baseline,Baseline,25% roof,103634.2284,22.22178661,9,322.0018034,0.863680411
+baseline,null,null,Baseline,L3 Compact Florescent,Baseline,baseline,Baseline,25% roof,116912.8344,24.64981651,10,311.9497597,0.878369653
+baseline,null,null,Baseline,L3 Compact Florescent,Baseline,baseline,Baseline,25% roof,124138.7244,24.62562212,10,312.0499244,0.933574308
+baseline,null,null,Baseline,L3 Compact Florescent,Baseline,baseline,VRE 19 Low E,25% roof,137493.6006,24.62562212,10,312.0499244,1.034008475
+baseline,null,null,Baseline,L3 Compact Florescent,Baseline,baseline,Triple Air Low RE,25% roof,137606.9993,24.62562212,10,312.0499244,1.03486128
+baseline,null,null,Baseline,L3 Compact Florescent,Baseline,baseline,Air 41mm,25% roof,138531.6348,24.62562212,10,312.0499244,1.041814919
+baseline,null,null,Baseline,L3 Compact Florescent,Baseline,baseline,Argon 41mm,25% roof,139560.9459,24.62562212,10,312.0499244,1.049555762
+baseline,null,null,Baseline,L3 Compact Florescent,Baseline,baseline,Argon 41mm,25% roof,151668.4366,24.62562212,10,312.0499244,1.140609076
+baseline,null,null,Baseline,L3 Compact Florescent,Baseline,baseline,Krypton 41mm,25% roof,159396.9934,24.62562212,10,312.0499244,1.198731005
+baseline,null,null,Baseline,L3 Compact Florescent,Baseline,"ICF 4""",Krypton 41mm,25% roof,181583.9166,24.78552299,10,311.3879348,1.356775885
+baseline,null,null,Baseline,L3 Compact Florescent,Baseline,"SIP 3.5""",Krypton 41mm,25% roof,204417.729,24.94288052,10,310.7364747,1.517751871
+baseline,null,null,Energy Star Baseline,L3 Compact Florescent,Baseline,"SIP 3.5""",Krypton 41mm,25% roof,261880.759,24.96757331,10,310.6342465,1.942477877
+baseline,null,null,Energy Star10%,L3 Compact Florescent,Baseline,"SIP 3.5""",Krypton 41mm,25% roof,319280.329,24.97374651,10,310.6086894,2.367648823
+electric,null,null,Energy Star10%,L3 Compact Florescent,Baseline,"SIP 3.5""",Krypton 41mm,25% roof,401559.9886,26.62016218,11,303.7925286,2.793627907
+electric,null,null,Energy Star 5%,L3 Compact Florescent,Baseline,"SIP 3.5""",Krypton 41mm,25% roof,459054.7486,26.60164259,11,303.8691997,3.19583872
+Cogen,null,null,Energy Star 5%,L3 Compact Florescent,Baseline,"SIP 3.5""",Krypton 41mm,25% roof,547172.1886,27.77146425,11,299.026138,3.648833619
+Cogen,null,null,Energy Star 5%,L3 Compact Florescent,Metal Roof,"SIP 3.5""",Krypton 41mm,25% roof,688710.8266,29.3712659,12,292.4029592,4.342532419
+Cogen,User Adaptive,25% Roof,Energy Star 5%,L3 Compact Florescent,Metal Roof,"SIP 3.5""",Krypton 41mm,25% roof,1239444.827,41.55530401,15,241.9610414,5.523693336
+Cogen,User Adaptive,25% Roof,Energy Star 5%,L3 Compact Florescent,Baseline,"SIP 3.5""",Krypton 41mm,25% roof,1097906.189,40.10040381,15,247.9843282,5.070436069
+Cogen,User Adaptive,25% Roof,Energy Star Baseline,L3 Compact Florescent,Baseline,"SIP 3.5""",Krypton 41mm,25% roof,1040411.429,40.1189234,15,247.9076571,4.802691251
+Cogen,User Adaptive,25% Roof,Energy Star Baseline,L3 Compact Florescent,Baseline,"SIP 3.5""",Krypton 41mm,25% roof,983011.8586,40.1127502,15,247.9332142,4.538424783
+Cogen,User Adaptive,25% Roof,Baseline,L3 Compact Florescent,Baseline,"SIP 3.5""",Krypton 41mm,25% roof,925548.8286,40.08805741,15,248.0354423,4.275758304
+Cogen,User Adaptive,25% Roof,Baseline,L3 Compact Florescent,Baseline,"SIP 3.5""",Argon 51mm,25% roof,917820.2718,40.08805741,15,248.0354423,4.240054687
+Cogen,User Adaptive,25% Roof,Baseline,L3 Compact Florescent,Baseline,"SIP 3.5""",Argon 41mm,25% roof,905712.7811,40.08805741,15,248.0354423,4.184121707
+Cogen,User Adaptive,25% Roof,Baseline,L3 Compact Florescent,Baseline,"SIP 3.5""",Argon 41mm,25% roof,898486.8911,40.10438862,15,247.9678311,4.149050006
+Cogen,User Adaptive,25% Roof,Baseline,L3 Compact Florescent,Baseline,"SIP 3.5""",Air 41mm,25% roof,897457.58,40.10438862,15,247.9678311,4.144296834
+Cogen,User Adaptive,25% Roof,Baseline,L3 Compact Florescent,Baseline,"SIP 3.5""",Triple Low E,25% roof,896532.9445,40.10438862,15,247.9678311,4.140027034
+Cogen,User Adaptive,25% Roof,Baseline,L3 Compact Florescent,Baseline,"SIP 3.5""",VRE 19 Low E,25% roof,896419.5458,40.10438862,15,247.9678311,4.139503379
+Cogen,User Adaptive,25% Roof,Baseline,L3 Compact Florescent,Baseline,"SIP 3.5""",Baseline,25% roof,883064.6696,40.10438862,15,247.9678311,4.077832976
+Cogen,User Adaptive,25% Roof,Baseline,L3 Compact Florescent,Baseline,"SIP 3.5""",Baseline,25% roof,883064.6696,40.10438862,15,247.9678311,4.077832976

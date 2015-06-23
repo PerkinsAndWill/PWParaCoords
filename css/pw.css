@@ -27,6 +27,17 @@ body, html {
 	width:1300;
 	height:350px;
 }
+#overlay{
+	background-color:#444;
+	position:absolute;
+	width:400px;
+	height:100px;
+	left:50%;
+	margin-left:-200px;
+	top:100px;
+	z-index:100;
+	padding:25px;
+}
 #container{
 	margin:auto;
 	width:1200px;
@@ -43,6 +54,11 @@ body, html {
 }
 #premium{
 
+}
+.close{
+	position:absolute;
+	right:2px;
+	top:2px;
 }
 .blue{
 	color:#67d5fd;
